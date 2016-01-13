@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp" >
+    
+     <TextView 
+        android:id="@+id/blocks_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/blocks" />
+    
+    <TextView
+        android:id="@+id/blocks_result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/blocks_textview"
+        android:layout_alignBottom="@id/blocks_textview" />
+    
+    
+    <TextView 
+        android:id="@+id/mortar_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/blocks_textview"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/mortar_mix" />
+    
+    <TextView
+        android:id="@+id/mortar_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/blocks_result_textview"
+        android:layout_alignBottom="@id/mortar_textview" />
+    
+     <TextView
+        android:id="@+id/pound_80_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/mortar_result_textview"
+        android:layout_alignBottom="@id/mortar_textview"
+        android:text="@string/mortar_80_pound" />
+     
+     <TextView 
+         android:id="@+id/concrete_fill_textview"
+         style="@style/TextView_labels"
+         android:layout_below="@id/mortar_textview"
+         android:layout_alignLeft="@id/mortar_textview"
+         android:text="@string/concrete_fill" />
+    
+    <TextView
+        android:id="@+id/cubic_yards_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/mortar_result_textview"
+        android:layout_alignBottom="@id/concrete_fill_textview" />
+    
+    <Spinner 
+        android:id="@+id/result_selection_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/concrete_fill_textview"
+        android:layout_alignLeft="@id/pound_80_bag_textview" />
+    
+    
+    
+     <TextView 
+        android:id="@+id/rebar_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/concrete_fill_textview"
+        android:layout_alignLeft="@id/concrete_fill_textview"
+        android:text="@string/rebar" />
+    
+    <TextView
+        android:id="@+id/rebar_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/mortar_result_textview"
+        android:layout_alignBottom="@id/rebar_textview" />
+    
+     <Button 
+         android:id="@+id/send_result_button"
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:layout_margin="16dp"
+         android:layout_below="@id/rebar_textview"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/send_button" />
+
+     <TextView
+         android:id="@+id/feet_textview"
+         style="@style/TextView_labels"
+         android:layout_above="@+id/send_result_button"
+         android:layout_alignLeft="@+id/result_selection_spinner"
+         android:text="@string/feet" />
+    
+</RelativeLayout>

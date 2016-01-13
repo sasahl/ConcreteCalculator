@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingBottom="8dp"
+         android:background="@drawable/linearlayout_border" >
+         
+         <TextView 
+             android:id="@+id/rebar_spacing_label"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:gravity="center"
+             android:padding="8dp"
+             android:textSize="28sp"
+             android:textColor="#ffffff"
+             android:text="@string/rebar_spacing" />
+         
+         <ImageView 
+             android:id="@+id/rebar_spacing_up_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:src="@drawable/ic_arrow_up"
+             android:contentDescription="@string/arrow_up" />
+         
+             
+             <LinearLayout
+                 android:id="@+id/lengthwise_layout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/rebar_spacing_label"
+                 android:layout_margin="8dp"
+                 android:orientation="horizontal" >
+                 
+                 <TextView
+                     android:layout_width="0dp" 
+                     android:layout_height="wrap_content"
+                     android:layout_weight="5"
+                     android:gravity="left"
+                     android:padding="8dp"
+                     android:textSize="25sp"
+                     android:textColor="#ffffff"
+                     android:text="@string/lengthwise_running_bars" />
+                 
+                 <Spinner
+			         android:id="@+id/lengthwise_running_bars_spinner"
+			         android:layout_width="0dp"
+			         android:layout_height="wrap_content"
+			         android:layout_weight="2" />
+			                     
+            </LinearLayout>
+            <LinearLayout 
+                android:id="@+id/perpendicular_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lengthwise_layout"
+                android:layout_margin="8dp"
+                android:orientation="horizontal" >
+                 
+                
+                <TextView
+                     android:layout_width="0dp" 
+                     android:layout_height="wrap_content"
+                     android:layout_weight="2"
+                     android:gravity="center"
+                     android:padding="8dp"
+                     android:textSize="25sp"
+                     android:textColor="#ffffff"
+                     android:text="@string/perpendicular_spacing" />
+                
+                <EditText 
+		             android:id="@+id/perpendicular_spacing_edittext"
+		             android:layout_width="0dp"
+		             android:layout_weight="1"
+		             android:inputType="number"
+		             style="@style/EditText_inputBoxes" />
+                 
+                <TextView
+                     android:layout_width="0dp" 
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:gravity="center"
+                     android:padding="8dp"
+                     android:textSize="25sp"
+                     android:textColor="#ffffff"
+                     android:text="@string/inches" />
+           </LinearLayout>
+                 
+             
+                 
+     </RelativeLayout>

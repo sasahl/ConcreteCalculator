@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/footing_background_red" >
+    
+    <include android:id="@+id/calculator_button"
+        layout="@layout/basic_input_layout" />
+    
+    <TextView
+        android:id="@+id/dirt_result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/calculator_button" />
+    
+    <TextView 
+        android:id="@+id/cubic_yards_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dirt_result_textview"
+        android:layout_alignBottom="@id/dirt_result_textview"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/excavated_dirt_result" />
+    
+    
+    <TextView 
+        android:id="@+id/disclaimer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/dirt_result_textview"
+        android:text="@string/dirt_disclaimer" />
+    
+   
+    
+</RelativeLayout>    

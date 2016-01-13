@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fillViewport="true" >
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+        
+    <TextView
+        android:id="@+id/jobname_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/jobname"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/jobname_edittext"
+        android:layout_width="200dp"
+        style="@style/EditText_inputBoxes"
+        android:layout_below="@id/jobname_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:inputType="text" />
+    
+    
+    <TextView
+        android:id="@+id/blocks_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/jobname_edittext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/blocks" />
+    
+    <CheckBox
+        android:id="@+id/blocks_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jobname_edittext"
+        android:layout_alignBaseline="@id/blocks_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="true" />
+    
+    <TextView
+        android:id="@+id/mortar_mix_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/blocks_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/mortar_mix" />
+    
+    <CheckBox
+        android:id="@+id/mortar_mix_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blocks_textview"
+        android:layout_alignBaseline="@id/mortar_mix_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+    <TextView
+        android:id="@+id/fill_cubic_yards_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/mortar_mix_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fill_cubic_yards" />
+    
+    <CheckBox
+        android:id="@+id/fill_cubic_yards_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mortar_mix_textview"
+        android:layout_alignBaseline="@id/fill_cubic_yards_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+    <TextView
+        android:id="@+id/fill_80_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/fill_cubic_yards_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fill_80_pound_bags" />
+    
+    <CheckBox
+        android:id="@+id/fill_80_pound_bag_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fill_cubic_yards_textview"
+        android:layout_alignBaseline="@id/fill_80_pound_bag_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+    <TextView
+        android:id="@+id/fill_60_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/fill_80_pound_bag_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fill_60_pound_bags" />
+    
+    <CheckBox
+        android:id="@+id/fill_60_pound_bag_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fill_80_pound_bag_textview"
+        android:layout_alignBaseline="@id/fill_60_pound_bag_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+    <TextView
+        android:id="@+id/fill_40_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/fill_60_pound_bag_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/fill_40_pound_bags" />
+    
+    <CheckBox
+        android:id="@+id/fill_40_pound_bag_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fill_60_pound_bag_textview"
+        android:layout_alignBaseline="@id/fill_40_pound_bag_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+     <TextView
+        android:id="@+id/rebar_textview"
+        style="@style/TextView_labels"
+        android:layout_below="@id/fill_40_pound_bag_textview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/rebar" />
+    
+    <CheckBox
+        android:id="@+id/rebar_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fill_40_pound_bag_textview"
+        android:layout_alignBaseline="@id/rebar_textview"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:checked="false" />
+    
+     
+</RelativeLayout>
+</ScrollView>

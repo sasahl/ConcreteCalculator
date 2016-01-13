@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference
+        android:id="@+id/preference_rebar_girdsize"
+        android:key="prefs_rebar_gridsize"
+        android:title="@string/rebar_gridsize"
+        android:dialogTitle="@string/dialog_rebar_gridsize"
+        android:summary="%s"
+        android:entries="@array/slab_rebar_spacing"
+        android:entryValues="@array/slab_rebar_spacing_values"
+        android:defaultValue="24" />
+    
+    <ListPreference 
+        android:id="@+id/preference_gravel_depth"
+        android:key="prefs_gravel_depth"
+        android:title="@string/gravel_depth"
+        android:dialogTitle="@string/dialog_gravel_depth"
+        android:summary="%s"
+        android:entries="@array/gravel_thickness"
+        android:entryValues="@array/gravel_thickness_values"
+        android:defaultValue="2" />
+    
+    <CheckBoxPreference
+        android:key="prefs_bag_calculations"
+        android:title="@string/show_concrete_bag_calculations"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference 
+        android:key="prefs_rebar_calculation"
+        android:title="@string/show_rebar_calculation"
+        android:defaultValue="true" />
+    
+    <CheckBoxPreference 
+        android:key="prefs_gravel_calculation"
+        android:title="@string/show_gravel_calculation"
+        android:defaultValue="true" />  
+        
+    <CheckBoxPreference
+        android:key="prefs_cost_calculation"
+        android:title="@string/show_cost_calculation"
+        android:defaultValue="true" />
+        
+    <EditTextPreference 
+        android:key="prefs_standard_price"
+        android:title="@string/price_of_concrete"
+        android:inputType="numberDecimal"
+        android:defaultValue="0" />
+        
+</PreferenceScreen>

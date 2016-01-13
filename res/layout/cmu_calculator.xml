@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/wall_background_yellow" >
+    
+    <TextView 
+        android:id="@+id/cmu_header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="@string/cmu_calculator_header" />
+    
+    <!-- Horizontal Divider line -->
+    <View
+        android:id="@+id/divider1_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/cmu_header_text_view"
+	    android:background="@android:color/darker_gray" />
+    
+    <TextView 
+        android:id="@+id/block_size_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:layout_below="@id/divider1_view"
+        android:layout_alignParentLeft="true"
+        android:text="@string/block_size" />
+    
+    <Spinner
+        android:id="@+id/block_size_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/divider1_view"
+        android:layout_toRightOf="@id/block_size_textview"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/height_textview"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="@string/height"
+        android:layout_below="@id/block_size_textview"
+        android:layout_alignParentLeft="true" />
+    
+    <EditText
+        android:id="@+id/height_edittext"
+        android:layout_width="100dp" 
+        style="@style/EditText_inputBoxes"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/height_textview"
+        android:layout_alignBaseline="@id/height_textview" 
+        android:layout_centerHorizontal="true" />
+    
+    <Spinner
+        android:id="@+id/height_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/height_edittext"
+        android:layout_alignBaseline="@id/height_textview"
+        android:layout_alignParentRight="true" />
+    
+    <TextView
+        android:id="@+id/length_textview"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="@string/length"
+        android:layout_below="@id/height_textview"
+        android:layout_alignParentLeft="true" />
+    
+    <EditText
+        android:id="@+id/length_edittext"
+        android:layout_width="100dp" 
+        style="@style/EditText_inputBoxes"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/length_textview"
+        android:layout_alignBaseline="@id/length_textview" 
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/feet_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:text="@string/feet"
+        android:layout_toRightOf="@id/length_edittext"
+        android:layout_alignBaseline="@id/length_textview"
+        android:layout_alignParentRight="true" />
+    
+    <!-- Rebar spacing -->
+     
+     <LinearLayout 
+         android:id="@+id/optional_rebar_layout"
+         android:layout_below="@id/length_textview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:background="@drawable/linearlayout_border" >
+         
+         <TextView 
+	         android:id="@+id/include_rebar_calculation_TextView"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="3"
+	         android:gravity="center"
+	         android:padding="4dp"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"
+	         android:text="@string/include_rebar_calculation" />
+         
+        <ImageView 
+            android:id="@+id/rebar_spacing_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/arrow_down"
+            android:src="@drawable/ic_hardware_keyboard_arrow_down" />         
+         
+     </LinearLayout>
+     <LinearLayout 
+         android:id="@+id/rebar_and_button_layout"
+		 android:layout_width="match_parent"
+		 android:layout_height="wrap_content"
+		 android:orientation="vertical"
+		 android:layout_below="@id/optional_rebar_layout" >     
+		 
+          <ViewStub 
+	        android:id="@+id/cmu_rebar_stub"
+	        android:inflatedId="@+id/rebar_spacing_layout"
+	        android:layout="@layout/wall_rebar_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+    
+	     <Button
+	        android:id="@+id/cmu_calculator_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="35dp"
+	        android:layout_margin="3dp"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff"
+	        android:background="@drawable/button_shape_shadowed"
+	        android:text="@string/calculate" />
+         
+         
+         </LinearLayout>
+     
+</RelativeLayout>

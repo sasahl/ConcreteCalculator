@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="@drawable/column_background_green" >
+    
+    <include android:id="@+id/calculator_button"
+        layout="@layout/basic_input_layout" />
+   
+    <TextView 
+        android:id="@+id/aggregate_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calculator_button"
+        android:padding="8dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/aggregate" />
+    
+     <Spinner 
+        android:id="@+id/aggregate_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/aggregate_textview"
+        android:layout_alignBottom="@id/aggregate_textview" />
+     
+      <!-- Horizontal Divider line -->
+    <View
+        android:id="@+id/divider1_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_below="@id/aggregate_textview"
+	    android:layout_marginBottom="15dp"
+	    android:background="@android:color/darker_gray" />
+    
+    <TextView
+        android:id="@+id/backfill_result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1_view"
+        android:padding="8dp"
+        android:textSize="40sp"
+        android:layout_marginLeft="20dp" />
+    
+    
+    <TextView
+        android:id="@+id/tons_of_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@id/backfill_result_textview"
+        android:layout_alignBottom="@id/backfill_result_textview"
+        android:text="@string/tons_of" />
+    
+    <TextView 
+        android:id="@+id/materials_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tons_of_textview"
+        android:layout_alignBottom="@id/backfill_result_textview"
+        android:padding="8dp"
+        android:textSize="25sp" />
+    
+</RelativeLayout>    
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feet_inches">
+        <item>@string/feet</item>
+        <item>@string/inches</item>
+    </string-array>
+    
+    <string-array name="cmu_size">
+        <item>6x8x16</item>
+        <item>8x8x16</item>
+        <item>12x8x16</item>
+    </string-array>
+    
+    <string-array name="aggregates">
+        <item>@string/gravel_half_inch</item>
+        <item>@string/gravel_three_quater_inch</item>
+        <item>@string/gravel_1</item>
+        <item>@string/gravel_2</item>
+        <item>@string/concrete_sand</item>
+        <item>@string/masonry_sand</item>
+        <item>@string/base</item>
+    </string-array>
+    
+    <string-array  name="block_fill_selection">
+        <item>@string/cubic_yards_label</item>
+        <item>@string/pound_80_bags_label</item>
+        <item>@string/pound_60_bags_label</item>
+        <item>@string/pound_40_bags_label</item>
+    </string-array>
+    
+    
+    <string-array name="slab_rebar_spacing" >
+        <item>12\"x12\"</item>
+        <item>18\"x18\"</item>
+        <item>24\"x24\"</item>
+        <item>30\"x30\"</item>
+        <item>36\"x36\"</item>
+    </string-array>
+    
+    <string-array name="slab_rebar_spacing_values" >
+        <item>12</item>
+        <item>18</item>
+        <item>24</item>
+        <item>30</item>
+        <item>36</item>
+    </string-array>
+    
+    <string-array name="gravel_thickness" >
+        <item>1\" Layer</item>
+        <item>2\" Layer</item>
+        <item>3\" Layer</item>
+        <item>4\" Layer</item>
+    </string-array>
+    
+    <!-- used in the preference layout --> 
+    <string-array name="gravel_thickness_values" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    
+    <string-array name="column_vertical_rebars" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="navigation_drawer" >
+        <item>@string/find_lowes</item>
+        <item>@string/find_home_depot</item>
+        <item>@string/concrete_supplier</item>
+        <item>@string/info</item>
+        <item>@string/action_settings</item>
+    </string-array>
+    
+    <array name="icons" >
+        <item>@drawable/ic_action_action_store</item>
+        <item>@drawable/ic_action_action_store</item>
+        <item>@drawable/ic_maps_truck</item>
+        <item>@drawable/ic_info</item>
+        <item>@drawable/ic_action_action_settings</item>
+    </array>
+    
+   
+    
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fillViewport="true" >
+    
+    <LinearLayout
+    android:id="@+id/activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"  >
+    
+    <FrameLayout
+        android:id="@+id/fragmentContainer_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <FrameLayout
+        android:id="@+id/fragmentContainer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+
+</LinearLayout>
+</ScrollView>

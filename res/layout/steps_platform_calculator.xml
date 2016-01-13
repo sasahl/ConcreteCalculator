@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" 
+    android:background="@drawable/slab_background_blue" >
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="4dp" >
+        
+	    <TextView 
+	        android:id="@+id/steps_header_text_view"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:layout_marginBottom="4dp"
+	        android:layout_marginTop="4dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:textSize="20sp"
+	        android:textColor="#ffffff"
+	        android:text="@string/steps_calculator_header" />
+	    
+	    <ImageView 
+	        android:id="@+id/steps_diagram"
+	        android:layout_width="0dp" 
+	        android:layout_height="match_parent"
+	    	android:layout_weight="1"
+	    	android:layout_gravity="right"
+            android:contentDescription="@string/steps"
+            android:src="@drawable/steps_platform1_3" />   
+            
+	    </LinearLayout>
+    
+    <!-- Horizontal Divider line -->
+    <View
+        android:id="@+id/divider1_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@android:color/darker_gray" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="4dp" >
+        
+        <TextView 
+            android:id="@+id/platform_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/platform_length" />
+        
+        <EditText 
+            android:id="@+id/platform_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            style="@style/EditText_inputBoxes" />
+        
+        <Spinner
+            android:id="@+id/platform_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal" 
+        android:layout_margin="4dp">
+        
+         <TextView 
+            android:id="@+id/rise_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/rise" />
+        
+        <EditText 
+            android:id="@+id/rise_edittext"
+            android:layout_width="110dp"
+            android:inputType="numberDecimal"
+            style="@style/EditText_inputBoxes" />
+        
+        <TextView 
+           	style="@style/TextView_labels"
+            android:text="@string/inches" />
+        
+    </LinearLayout>
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:orientation="horizontal" 
+        android:layout_margin="4dp">
+        
+         <TextView 
+            android:id="@+id/run_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/run" />
+        
+        <EditText 
+            android:id="@+id/run_edittext"
+            android:layout_width="110dp"
+            android:inputType="numberDecimal"
+            style="@style/EditText_inputBoxes" />
+        
+        <TextView 
+           	style="@style/TextView_labels"
+            android:text="@string/inches" />
+        
+    </LinearLayout>
+    <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="4dp"
+             android:orientation="horizontal" >
+
+             <TextView
+                 android:id="@+id/width_textview"
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:padding="4dp"
+                 android:text="@string/width"
+                 android:textSize="16sp" />
+
+             <EditText
+                 android:id="@+id/width_edittext"
+                 style="@style/EditText_inputBoxes"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:inputType="numberDecimal"/>
+
+             <Spinner
+                 android:id="@+id/width_spinner"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1" />
+         </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_margin="4dp">
+        
+         <TextView 
+            android:id="@+id/number_of_steps_textview"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/number_of_steps" />
+        
+        <EditText 
+            android:id="@+id/number_of_steps_edittext"
+            android:layout_width="110dp"
+            android:inputType="number"
+            style="@style/EditText_inputBoxes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/including_platform"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+    
+      <!-- Gravel option layout -->
+     
+    <LinearLayout
+    	 android:id="@+id/optional_gravel_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:background="@drawable/linearlayout_border" >
+     
+         <TextView 
+	         android:id="@+id/include_gravel_calculation_TextView"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="3"
+	         android:gravity="center"
+	         android:padding="4dp"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"
+	         android:text="@string/include_gravel_calculation" />
+         
+         <CheckBox 
+             android:id="@+id/include_gravel_checkbox"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" 
+             android:checked="false" />
+    
+     </LinearLayout> 
+         
+     <!-- Rebar spacing -->
+     
+     <LinearLayout 
+         android:id="@+id/optional_rebar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:background="@drawable/linearlayout_border" >
+         
+         <TextView 
+	         android:id="@+id/include_rebar_calculation_TextView"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="3"
+	         android:gravity="center"
+	         android:padding="4dp"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"
+	         android:text="@string/include_rebar_calculation" />
+         
+        <ImageView 
+            android:id="@+id/rebar_spacing_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/arrow_down"
+            android:src="@drawable/ic_hardware_keyboard_arrow_down" />         
+         
+     </LinearLayout>
+     
+     
+    <ViewStub 
+        android:id="@+id/steps_rebar_stub"
+        android:inflatedId="@+id/rebar_spacing_layout"
+        android:layout="@layout/steps_rebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /> 
+    
+     <Button
+        android:id="@+id/steps_calculator_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="3dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_shape_shadowed"
+        android:text="@string/calculate" />
+    
+
+</LinearLayout>
+

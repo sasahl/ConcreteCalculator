@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingBottom="8dp"
+         android:background="@drawable/linearlayout_border" >
+         
+         <TextView 
+             android:id="@+id/rebar_spacing_label"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="8dp"
+             android:gravity="center"
+             android:padding="8dp"
+             android:textSize="28sp"
+             android:textColor="#ffffff"
+             android:text="@string/rebar_spacing" />
+         
+         <ImageView 
+             android:id="@+id/rebar_spacing_up_arrow"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="20dp"
+             android:src="@drawable/ic_arrow_up"
+             android:contentDescription="@string/arrow_up" />
+         
+             
+             <TextView 
+                android:id="@+id/vertical_label"
+                style="@style/TextView_labels" 
+                android:layout_below="@id/rebar_spacing_label"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="50dp"
+                android:textSize="25sp"
+                android:text="@string/vertical" />
+             
+             <EditText 
+	            android:id="@+id/vertical_edittext"
+	            android:layout_width="150dp"
+	            android:layout_toRightOf="@id/vertical_label"
+	            android:layout_alignBottom="@id/vertical_label"
+	            android:layout_marginBottom="8dp"
+	            android:inputType="number"
+	            style="@style/EditText_inputBoxes" />
+             
+             <TextView 
+                android:id="@+id/vertical_inches_label"
+				style="@style/TextView_labels"
+				android:layout_toRightOf="@id/vertical_edittext"
+				android:layout_alignBottom="@id/vertical_label"
+				android:layout_marginBottom="8dp"
+				android:textSize="25sp"
+				android:text="@string/inches" />
+             
+        
+             <TextView 
+                android:id="@+id/horizontal_label"
+                style="@style/TextView_labels" 
+                android:layout_alignLeft="@id/vertical_label"
+                android:layout_below="@id/vertical_label"
+                android:layout_marginTop="8dp"
+                android:textSize="25sp"
+                android:text="@string/horizontal" />
+             
+             <EditText 
+	            android:id="@+id/horizontal_edittext"
+	            android:layout_width="150dp"
+	            android:layout_toRightOf="@id/horizontal_label"
+	            android:layout_alignLeft="@id/vertical_edittext"
+	            android:layout_alignBottom="@id/horizontal_label"
+	            android:layout_marginTop="8dp"
+	            android:inputType="number"
+	            style="@style/EditText_inputBoxes" />
+             
+             <TextView 
+                android:id="@+id/horizontal_inches_label"
+				style="@style/TextView_labels"
+				android:layout_toRightOf="@id/horizontal_edittext"
+				android:layout_alignBottom="@id/horizontal_label"
+				android:layout_marginTop="8dp"
+				android:textSize="25sp"
+				android:text="@string/inches" />
+                 
+     </RelativeLayout>
+    
+
+

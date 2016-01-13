@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/background_orange_border" >
+    
+    <include android:id="@+id/calculator_button"
+        layout="@layout/basic_input_layout" />
+    
+    <TextView
+        android:id="@+id/concrete_hauloff_result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/calculator_button" />
+    
+    <TextView 
+        android:id="@+id/tons_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/concrete_hauloff_result_textview"
+        android:layout_alignBottom="@id/concrete_hauloff_result_textview"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/tons_of_concrete" />
+    
+    
+
+</RelativeLayout>

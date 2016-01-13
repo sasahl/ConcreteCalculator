@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calculations_result_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:paddingLeft="16dp"
+     android:paddingRight="16dp" >
+
+    <TextView 
+        android:id="@+id/cubic_yards_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/cubic_yards" />
+    
+    <TextView
+        android:id="@+id/cubic_yards_result_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@id/cubic_yards_textview"
+        android:layout_alignBottom="@id/cubic_yards_textview" />
+    
+    <TextView
+        android:id="@+id/cost_textview"
+        style="@style/TextView_labels"
+        android:layout_marginRight="10dp"
+        android:layout_alignLeft="@id/cubic_yards_textview"
+        android:layout_below="@id/cubic_yards_textview"
+        android:text="@string/cost" />
+    
+    <TextView
+        android:id="@+id/cost_result_textview"
+        style="@style/TextView_labels"
+        android:hint="@string/cost_hint"
+        android:layout_alignLeft="@id/cubic_yards_result_textview"
+        android:layout_alignBottom="@id/cost_textview" />
+    
+    
+    <!-- Horizontal Divider line --> 
+    <View
+        android:id="@+id/divider1_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@android:color/darker_gray" />
+	    
+    
+    <!-- Concrete bags layout -->
+    
+    <TextView
+        android:id="@+id/eighty_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/cost_textview"
+        android:layout_below="@id/cost_textview"
+        android:text="@string/pound_80_bags" />
+    
+    <TextView
+        android:id="@+id/eighty_pound_bag_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/cost_result_textview"
+        android:layout_alignBottom="@id/eighty_pound_bag_textview" />
+    
+    <TextView 
+        android:id="@+id/sixty_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/eighty_pound_bag_textview"
+        android:layout_below="@id/eighty_pound_bag_textview"
+        android:text="@string/pound_60_bags" />
+    
+    <TextView
+        android:id="@+id/sixty_pound_bag_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/eighty_pound_bag_result_textview"
+        android:layout_alignBottom="@id/sixty_pound_bag_textview" />
+    
+    <TextView 
+        android:id="@+id/fourty_pound_bag_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/sixty_pound_bag_textview"
+        android:layout_below="@id/sixty_pound_bag_textview"
+        android:text="@string/pound_40_bags" />
+    
+    <TextView
+        android:id="@+id/fourty_pound_bag_result_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/sixty_pound_bag_result_textview"
+        android:layout_alignBottom="@id/fourty_pound_bag_textview" />
+    
+    <!-- Rebar layout -->
+    
+    <TextView 
+        android:id="@+id/rebar_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/fourty_pound_bag_textview"
+        android:layout_below="@id/fourty_pound_bag_textview"
+        android:text="@string/rebar" />
+    
+    <TextView
+        android:id="@+id/rebar_result_textview"
+        style="@style/TextView_labels"
+        android:layout_toRightOf="@id/rebar_textview"
+        android:layout_alignBottom="@id/rebar_textview" />
+    
+    <TextView 
+        android:id="@+id/rebar_linearfeet_textview"
+        style="@style/TextView_labels"
+        android:layout_toRightOf="@id/rebar_result_textview"
+        android:layout_alignBottom="@id/rebar_result_textview"
+        android:text="@string/feet" />
+    
+     <Spinner 
+	    android:id="@+id/rebar_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_toRightOf="@id/rebar_linearfeet_textview"
+	    android:layout_alignBottom="@id/rebar_linearfeet_textview" />
+     
+     <!-- Gravel layout -->
+     
+     <TextView 
+        android:id="@+id/gravel_textview"
+        style="@style/TextView_labels"
+        android:layout_alignLeft="@id/rebar_textview"
+        android:layout_below="@id/rebar_textview"
+        android:text="@string/gravel" />
+     
+     <TextView
+        android:id="@+id/gravel_result_textview"
+        style="@style/TextView_labels"
+        android:layout_toRightOf="@id/gravel_textview"
+        android:layout_alignBottom="@id/gravel_textview" />
+     
+     <TextView 
+        android:id="@+id/gravel_tons_textview"
+        style="@style/TextView_labels"
+        android:layout_toRightOf="@id/gravel_result_textview"
+        android:layout_alignBottom="@id/gravel_result_textview"
+        android:text="@string/tons" />
+     
+     <Spinner 
+	    android:id="@+id/gravel_spinner"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignBottom="@id/gravel_tons_textview"
+	    android:layout_toRightOf="@id/gravel_tons_textview" /> 
+     
+     <Button
+         android:id="@+id/add_calculation_button"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@id/gravel_textview"
+         android:layout_margin="3dp"
+         android:background="@drawable/add_calculation" />
+     
+     <Button 
+         android:id="@+id/send_result_button"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_margin="3dp"
+         android:layout_below="@id/gravel_textview"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/send_button" />
+         
+     
+</RelativeLayout>
+

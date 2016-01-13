@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+    <TextView 
+        android:id="@+id/header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textColor="#ffffff"
+        android:text="@string/backfill" />
+    
+    <LinearLayout
+        android:id="@+id/linearlayout_left_top"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearlayout_right_top"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_text_view"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/linearlayout_border"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+         <TextView
+	        android:id="@+id/total_squarefoot_text_view" 
+	        style="@style/TextView_labels"
+	        android:text="@string/total_square_footage" />
+    
+	    <EditText
+	        android:id="@+id/total_squarefoot_edit_text"
+	        android:layout_width="150dp"
+	        android:nextFocusForward="@+id/depth_edit_text"
+	        android:inputType="number"
+	        style="@style/EditText_inputBoxes" />
+	    
+	</LinearLayout>
+	 
+    <LinearLayout
+    	android:id="@+id/linearlayout_right_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+         android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:layout_below="@id/header_text_view"
+        android:layout_toRightOf="@id/linearlayout_left_top"
+        android:layout_alignParentRight="true" 
+        android:background="@drawable/linearlayout_border" >
+	    
+        <TextView 
+	        android:id="@+id/width_text_view"
+	        style="@style/TextView_labels"
+	        android:text="@string/width" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		    
+	         <EditText
+		        android:id="@+id/width_edit_text"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:inputType="numberDecimal"
+		        style="@style/EditText_inputBoxes"
+		        android:nextFocusForward="@+id/length_edit_text" />
+	         
+	         <Spinner 
+	             android:id="@+id/width_spinner"
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content"
+	             android:layout_weight="1" />
+         
+         </LinearLayout>
+    
+	    <TextView
+	        android:id="@+id/length_text_view"
+	        style="@style/TextView_labels"
+	        android:text="@string/length" />
+	    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+	         
+		    <EditText
+		        android:id="@+id/length_edit_text"
+		        android:layout_width="0dp" 
+		        android:layout_weight="1"
+		        android:inputType="numberDecimal"
+		        style="@style/EditText_inputBoxes" 
+		        android:nextFocusForward="@+id/depth_edit_text"/>
+		    
+		    <Spinner 
+	             android:id="@+id/length_spinner"
+	             android:layout_width="0dp"
+	             android:layout_height="wrap_content" 
+	             android:layout_weight="1" />        
+	    
+	    </LinearLayout>
+	    
+   </LinearLayout>
+   <LinearLayout 
+       android:id="@+id/linearlayout_thickness"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       android:layout_below="@id/linearlayout_right_top" >
+       
+   
+	     <TextView
+	        android:id="@+id/depth_text_view"
+	        style="@style/TextView_labels"
+	        android:text="@string/depth" />
+	    
+	    <EditText
+	        android:id="@+id/depth_edit_text"
+	        android:layout_width="150dp" 
+	        android:inputType="numberDecimal"
+	        style="@style/EditText_inputBoxes" />
+	    
+	     <Spinner 
+	        android:id="@+id/depth_spinner"
+	        android:layout_width="140dp"
+	        android:layout_height="wrap_content"  />     
+	    
+	</LinearLayout>
+    
+    <Button
+        android:id="@+id/calculator_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="6dp"
+        android:layout_below="@id/linearlayout_thickness"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_shape_shadowed"
+        android:text="@string/calculate" />   
+
+</merge>

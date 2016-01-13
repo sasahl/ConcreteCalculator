@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Concrete Calculator</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- header strings -->
+    <string name="main_header">Concrete Calculator</string>
+    <string name="slab_calculator_header">Slab Calculator</string>
+    <string name="wall_calculator_header">Wall Calculator</string>
+    <string name="footing_calculator_header">Footing Calculator</string>
+    <string name="column_calculator_header">Column Calculator</string>
+    <string name="steps_calculator_header">Steps Calculator</string>
+    <string name="cmu_calculator_header">CMU Calculator</string>
+    
+    <!-- Buttons -->
+    <string name="concrete_slab">Concrete Slab</string>
+    <string name="concrete_wall">Concrete Wall</string>
+    <string name="concrete_footing">Concrete Footing</string>
+    <string name="concrete_column">Concrete Column</string>
+    <string name="concrete_steps">Concrete Steps</string>
+    <string name="cmu_blocks">CMU Blocks</string>
+    <string name="excavate_dirt">Dirt Excavation</string>
+    <string name="backfill">Aggregate</string>
+    <string name="concrete_tear_out">Concrete Haul Off</string>
+    <string name="calculate">Calculate</string>
+    <string name="add_calculation">Add Calculation</string>
+    <string name="send_result">Send Result</string>
+    <string name="send">Send</string>
+    <string name="cancel">Cancel</string>
+    
+    
+   <!-- Labels -->
+   <string name="total_square_footage">Square Feet:</string>
+   <string name="width">Width:</string>
+   <string name="height">Height:</string>
+   <string name="length">Length:</string>
+   <string name="thickness">Thickness:</string>
+   <string name="cubic_yards">Cubic Yards:</string>
+   <string name="cubic_yards_label">Cubic Yards</string>
+   <string name="cost">Cost:</string>
+   <string name="pound_80_bags">80# bags:</string>
+   <string name="pound_60_bags">60# bags:</string>
+   <string name="pound_40_bags">40# bags:</string>
+   <string name="pound_80_bags_label">80# bags</string>
+   <string name="pound_60_bags_label">60# bags</string>
+   <string name="pound_40_bags_label">40# bags</string>
+   <string name="rebar">Rebar:</string>
+   <string name="gravel">Gravel:</string>
+   <string name="bags">Bags</string>
+   <string name="tons">Tons</string>
+   <string name="feet">Feet</string>
+   <string name="inches">Inches</string>
+   <string name="or">or</string>
+   <string name="disclaimer">**The calculations in this app should be used for estimation purposes only.</string>
+   <string name="cost_hint">Not set</string>
+   <string name="rebar_spacing">Rebar Spacing</string>
+   <string name="vertical">Vertical:</string>
+   <string name="horizontal">Horizontal:</string>
+   <string name="include_rebar_calculation">Include Rebar Calculation</string>
+   <string name="include_gravel_calculation">Include Gravel Calculation</string>
+   <string name="arrow_down">Down Arrow</string>
+   <string name="arrow_up">Up Arrow</string>
+   <string name="jobname">Job Name/Comment:  (Optional)</string>
+   <string name="jobname_str">Job Name:</string>
+   <string name="send_dialog_title">Send Message</string>
+   <string name="send_dialog_subject">Concrete Calculations Report</string>
+   <string name="send_cmu_dialog_subject">CMU Calculations Report</string>
+   <string name="send_report">Send Report</string>
+   <string name="diameter">Diameter:</string>
+   <string name="number_of_columns">Number of Columns:</string>
+   <string name="vertical_bars">Vertical Bars:</string>
+   <string name="horizontal_spacing">Horizontal Spacing:</string>
+   <string name="slab">Slab</string>
+   <string name="wall">Wall</string>
+   <string name="footing">Footing</string>
+   <string name="columns">Columns</string>
+   <string name="steps">Steps</string>
+   <string name="steps_dialog_title">Which Kind</string>
+   <string name="add_calculation_dialog_title">Add Calculation</string>
+   <string name="rise">Rise:</string>
+   <string name="run">Run:</string>
+   <string name="depth">Depth:</string>	
+   <string name="number_of_steps">Number of Steps:</string>
+   <string name="platform_length">Platform Length:</string>
+   <string name="including_platform">With Platform</string>
+   <string name="ok">OK</string>
+   <string name="lengthwise_running_bars">Lengthwise Running Bars:</string>
+   <string name="perpendicular_spacing">Perpendicular Bar Spacing:</string>
+   <string name="block_size">Block Size:</string>
+   <string name="blocks">Blocks:</string>
+   <string name="mortar_mix">Mortar Mix:</string>
+   <string name="concrete_fill">Concrete Fill:</string>
+   <string name="mortar_80_pound">80# bags</string>
+   <string name="fill_cubic_yards">Fill: (Cubic Yards)</string>
+   <string name="fill_80_pound_bags">Fill: (80# bags)</string>
+   <string name="fill_60_pound_bags">Fill: (60# bags)</string>
+   <string name="fill_40_pound_bags">Fill: (40# bags)</string>
+   <string name="excavated_dirt_result">Cubic Yards of Dirt</string>
+   <string name="dirt_disclaimer">**This calculation assumes clay as the excavated material. If the soil is sandy, then the calculated result will be a bit less.</string>
+   <string name="aggregate">Aggregate:</string>
+   <string name="tons_of">Tons of</string>
+   <string name="tons_of_concrete">Tons of Concrete</string>
+   
+   <!-- Aggregate string array strings -->
+   <string name="gravel_half_inch">&#189;\" Gravel</string>
+   <string name="gravel_three_quater_inch">&#190;\" Gravel</string>
+   <string name="gravel_1">1\" Gravel</string>
+   <string name="gravel_2">2\" Gravel</string>
+   <string name="concrete_sand">Concrete Sand</string>
+   <string name="masonry_sand">Masonry Sand</string>
+   <string name="base">Crushed Rock/Base</string>
+   
+   
+   <!-- Settings -->
+   <string name="price_of_concrete">Price of Concrete per Yard</string>
+   <string name="rebar_gridsize">Default Concrete Slab Rebar Grid Size</string>
+   <string name="dialog_rebar_gridsize">Default Rebar Grid Size</string>
+   <string name="gravel_depth">Default Gravel Depth</string>
+   <string name="dialog_gravel_depth">Default Gravel Depth</string>
+   <string name="show_concrete_bag_calculations">Show Concrete Bag Calculations</string>
+   <string name="show_rebar_calculation">Show Rebar Calculation</string>
+   <string name="show_gravel_calculation">Show Gravel Calculation</string>
+   <string name="show_cost_calculation">Show Cost Calculation</string>
+   
+   <!-- Navigation drawer -->
+   <string name="drawer_open">Open Drawer</string>
+   <string name="drawer_close">Close Drawer</string>
+   <string name="icon">Icon</string>
+   <string name="info">App Info</string>
+   <string name="find_lowes">Find Lowe\'s</string>
+   <string name="find_home_depot">Find Home Depot</string>
+   <string name="concrete_supplier">Concrete Supplier</string>
+   <string name="no_location_provider_found">No Location Services Enabled</string>
+   <string name="no_location_found">No Location Found!</string>
+   
+   <!-- Pogress bar / Toasts -->
+   <string name="finding_location">Finding Location</string>
+   <string name="adding_calculations_toast">You are adding one or more calculations!</string>
+   
+   <!-- App Info -->
+   <string name="app_information">App Information</string>   
+   <string name="general_app_info">
+       \tThe purpose of this app is to provide you with a tool that will help you calculate how much concrete, rebar, or other materials to get for a specific job.
+        It is meant to give you a rough estimate of how much material is needed. Of course individual job conditions vary, 
+        so it is recommended that you double-check and compare the values from this app with your own estimate and calculations.\n\n\t 
+		The rebar calculations in this app have all had 10 percent added to the total length needed. This is done to account for waste and overlap.\n\n\t
+		The dirt excavation calculator takes into account that soil expands when it is excavated.
+		 For example, a 3\'x3\'x3\' hole does not equal 1 cubic yard when excavated. It equals roughly 1.3 cubic yards.\n\n\t
+		Hopefully you will find this app helpful and useful.
+   </string>
+   
+   
+</resources>

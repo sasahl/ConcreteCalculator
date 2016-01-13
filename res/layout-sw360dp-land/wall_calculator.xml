@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall_background_yellow"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    
+    <TextView 
+        android:id="@+id/wall_header_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="@string/wall_calculator_header" />
+    
+    <!-- Horizontal Divider line -->
+    <View
+        android:id="@+id/divider1_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@android:color/darker_gray" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="4dp" >
+        
+        <TextView 
+            android:id="@+id/height_textview"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/height" />
+        
+        <EditText 
+            android:id="@+id/height_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            style="@style/EditText_inputBoxes" />
+        
+        <Spinner
+            android:id="@+id/height_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center" 
+        android:layout_margin="4dp">
+        
+         <TextView 
+            android:id="@+id/length_textview"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/length" />
+        
+        <EditText 
+            android:id="@+id/length_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            style="@style/EditText_inputBoxes" />
+        
+        <Spinner
+            android:id="@+id/length_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:gravity="center"
+        android:layout_margin="4dp">
+        
+         <TextView 
+            android:id="@+id/thickness_textview"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/thickness" />
+        
+        <EditText 
+            android:id="@+id/thickness_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            style="@style/EditText_inputBoxes" />
+        
+        <Spinner
+            android:id="@+id/thickness_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+     <!-- Rebar spacing -->
+
+     
+     <LinearLayout 
+         android:id="@+id/optional_rebar_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:background="@drawable/linearlayout_border" >
+         
+         <TextView 
+	         android:id="@+id/include_rebar_calculation_TextView"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="3"
+	         android:gravity="center"
+	         android:padding="4dp"
+	         android:textSize="18sp"
+	         android:textColor="#ffffff"
+	         android:text="@string/include_rebar_calculation" />
+         
+        <ImageView 
+            android:id="@+id/rebar_spacing_down_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/arrow_down"
+            android:src="@drawable/ic_hardware_keyboard_arrow_down" />         
+         
+     </LinearLayout>	
+
+    <ViewStub 
+        android:id="@+id/wall_rebar_stub"
+        android:inflatedId="@+id/rebar_spacing_layout"
+        android:layout="@layout/wall_rebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+     <Button
+        android:id="@+id/wall_calculator_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="3dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_shape_shadowed"
+        android:text="@string/calculate" />
+    
+
+</LinearLayout>

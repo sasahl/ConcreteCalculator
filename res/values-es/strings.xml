@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><resources>
+
+    <string name="app_name">Calculadora de hormigón</string>
+    <string name="action_settings">Configuración</string>
+    
+    <!-- header strings -->
+    <string name="main_header">Calculadora de hormigón</string>
+    <string name="slab_calculator_header">Calculadora de losa</string>
+    <string name="wall_calculator_header">Calculadora de pared</string>
+    <string name="footing_calculator_header">Calculadora de cimientos</string>
+    <string name="column_calculator_header">Calculadora de columna</string>
+    <string name="steps_calculator_header">Calculadora de escalones</string>
+    <string name="cmu_calculator_header">Bloques de hormigón</string>
+    
+    <!-- Buttons -->
+    <string name="concrete_slab">Losa de hormigón</string>
+    <string name="concrete_wall">Pared de hormigón</string>
+    <string name="concrete_footing">Cimiento de hormigón</string>
+    <string name="concrete_column">Columna de hormigón</string>
+    <string name="concrete_steps">Escalones de hormigón</string>
+    <string name="cmu_blocks">Bloques de hormigón</string>
+    <string name="excavate_dirt">Excavación de tierra</string>
+    <string name="backfill">Agregado</string>
+    <string name="concrete_tear_out">Arrancar de hormigón</string>
+    <string name="calculate">Calcular</string>
+    <string name="add_calculation">Añadir cálculo</string>
+    <string name="send_result">Enviar resultado</string>
+    <string name="send">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    
+    
+   <!-- Labels -->
+   <string name="total_square_footage">Pies cuadrados:</string>
+   <string name="width">Ancho:</string>
+   <string name="height">Altura:</string>
+   <string name="length">Longitud:</string>
+   <string name="thickness">Grosor:</string>
+   <string name="cubic_yards">Yardas cúbicas:</string>
+   <string name="cubic_yards_label">Yardas cúbicas</string>
+   <string name="cost">Costo:</string>
+   <string name="pound_80_bags">80# bolsas:</string>
+   <string name="pound_60_bags">60# bolsas:</string>
+   <string name="pound_40_bags">40# bolsas:</string>
+   <string name="pound_80_bags_label">80# bolsas</string>
+   <string name="pound_60_bags_label">60# bolsas</string>
+   <string name="pound_40_bags_label">40# bolsas</string>
+   <string name="rebar">Barilla:</string>
+   <string name="gravel">Grava:</string>
+   <string name="bags">Bolsas</string>
+   <string name="tons">Tons</string>
+   <string name="feet">Pies</string>
+   <string name="inches">Pulgadas</string>
+   <string name="or">o</string>
+   <string name="disclaimer">**Los cálculos en esta aplicación se deben usar sólo con fines de estimación.</string>
+   <string name="cost_hint">No establecido</string>
+   <string name="rebar_spacing">Espaciado entre las barillas</string>
+   <string name="vertical">Vertical:</string>
+   <string name="horizontal">Horizontal:</string>
+   <string name="include_rebar_calculation">Incluir el cálculo de las barillas</string>
+   <string name="include_gravel_calculation">Incluir el cálculo de la grava</string>
+   <string name="arrow_down">Flecha hacia abajo</string>
+   <string name="arrow_up">Flecha hacia arriba</string>
+   <string name="jobname">Nombre del trabajo/comentario: (Opcional)</string>
+   <string name="jobname_str">Nombre del trabajo:</string>
+   <string name="send_dialog_title">Enviar mensaje</string>
+   <string name="send_dialog_subject">Informe sobre los cálculos del hormigón</string>
+   <string name="send_cmu_dialog_subject">Informe sobre los cálculos de los bloques de hormigón</string>
+   <string name="send_report">Enviar informe</string>
+   <string name="diameter">Diámetro:</string>
+   <string name="number_of_columns">Número de columnas:</string>
+   <string name="vertical_bars">Barras verticales:</string>
+   <string name="horizontal_spacing">Espaciado horizontal:</string>
+   <string name="slab">Losa</string>
+   <string name="wall">Pared</string>
+   <string name="footing">Cimiento</string>
+   <string name="columns">Columnas</string>
+   <string name="steps">Escalones</string>
+   <string name="steps_dialog_title">Qué clase</string>
+   <string name="add_calculation_dialog_title">Añadir cálculo</string>
+   <string name="rise">Altura:</string>
+   <string name="run">Longitud:</string>
+   <string name="depth">Profundidad:</string>	
+   <string name="number_of_steps">Cantidad de escalones:</string>
+   <string name="platform_length">Longitud de la plataforma:</string>
+   <string name="including_platform">Ancho de la plataforma:</string>
+   <string name="ok">OK</string>
+   <string name="lengthwise_running_bars">Barras dispuestas longitudinalmente:</string>
+   <string name="perpendicular_spacing">Espaciado perpendicular de las barras:</string>
+   <string name="block_size">Tamaño de bloque:</string>
+   <string name="blocks">Bloques:</string>
+   <string name="mortar_mix">Mezcla de mortero:</string>
+   <string name="concrete_fill">Relleno de hormigón:</string>
+   <string name="mortar_80_pound">80# bolsas</string>
+   <string name="fill_cubic_yards">Rellenar: (yardas cúbicas)</string>
+   <string name="fill_80_pound_bags">Rellenar: (80# bolsas)</string>
+   <string name="fill_60_pound_bags">Rellenar: (60# bolsas)</string>
+   <string name="fill_40_pound_bags">Rellenar: (40# bolsas)</string>
+   <string name="excavated_dirt_result">Yardas cúbicas de tierra</string>
+   <string name="dirt_disclaimer">**Este cálculo asume que el material excavado es arcilloso. Si el suelo es arenoso, entonces el resultado calculado será un poco menor.</string>
+   <string name="aggregate">Agregado:</string>
+   <string name="tons_of">Toneladas de</string>
+   <string name="tons_of_concrete">Toneladas de hormigón</string>
+   
+   <!-- Aggregate string array strings -->
+   <string name="gravel_half_inch">½\" Grava</string>
+   <string name="gravel_three_quater_inch">¾\" Grava</string>
+   <string name="gravel_1">1\" Grava</string>
+   <string name="gravel_2">2\" Grava</string>
+   <string name="concrete_sand">Arena para el hormigón</string>
+   <string name="masonry_sand">Arena para albañilería</string>
+   <string name="base">Roca triturada/base</string>
+   
+   
+   <!-- Settings -->
+   <string name="price_of_concrete">Precio del hormigón por yarda</string>
+   <string name="rebar_gridsize">Tamaño predeterminado de la cuadrícula de barras de refuerzo para la losa de hormigón</string>
+   <string name="dialog_rebar_gridsize">Tamaño predeterminado de la cuadrícula de barras de refuerzo</string>
+   <string name="gravel_depth">Profundidad predeterminada de la grava</string>
+   <string name="dialog_gravel_depth">Profundidad predeterminada de la grava</string>
+   <string name="show_concrete_bag_calculations">Mostrar los cálculos de las bolsas de hormigón</string>
+   <string name="show_rebar_calculation">Mostras los cálculos de las barras de refuerzo</string>
+   <string name="show_gravel_calculation">Mostrar los cálculos de la grava</string>
+   <string name="show_cost_calculation">Mostrar los cálculos de costo</string>
+   
+   <!-- Navigation drawer -->
+   <string name="drawer_open">Abrir cajón</string>
+   <string name="drawer_close">Cerrar cajón</string>
+   <string name="icon">Ícono</string>
+   <string name="info">Información sobre la aplicación</string>
+   <string name="find_lowes">Buscar Lowe\'s</string>
+   <string name="find_home_depot">Buscar Home Depot</string>
+   <string name="concrete_supplier">Proveedor de hormigón</string>
+   <string name="no_location_provider_found">No hay servicios de localización activados</string>
+   <string name="no_location_found">No se ha encontrado la ubicación</string>
+   
+   <!-- Pogress bar / Toasts -->
+   <string name="finding_location">Encontrar ubicación</string>
+   <string name="adding_calculations_toast">¡Usted está agregando uno o más cálculos!</string>
+   
+   <!-- App Info -->
+   <string name="app_information">Información sobre la aplicación</string>   
+   <string name="general_app_info">
+       \t El objetivo de esta aplicación es ofrecer una herramienta que le ayudará a calcular la cantidad de hormigón, barras de refuerzo u otros materiales necesarios para un trabajo específico.
+        El propósito es darle una estimación aproximada de la cantidad de material que se necesita. Por supuesto que las condiciones de trabajo individuales varían, 
+        por lo que se recomienda que vuelva a verificar los resultados y compare los valores de esta aplicación con su estimación y cálculos propios.\n\n\t 
+        Se añadió un 10 por ciento del cálculo total de la longitud necesaria a los cálculos de las barras de refuerzo en esta aplicación . Esto se hace teniendo en cuenta los residuos y la superposición.\n\n\t 
+        La calculadora de excavación de tierra tiene en cuenta que el suelo se expande cuando se excava.
+         Por ejemplo, un agujero de 3\' x 3\' x 3\' no es igual a 1 yarda cúbica cuando se excava. Es igual a aproximadamente 1.3 yardas cúbicas.\n\n\t 
+         Esperamos que encuentre esta aplicación útil y provechosa.</string>
+   
+   
+</resources>

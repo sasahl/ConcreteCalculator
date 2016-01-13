@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fillViewport="true" >
+    
+    
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical" 
+    android:background="@drawable/background_with_frame">
+    
+    <LinearLayout 
+       style="@style/LinearLayout_main" >
+        
+        <ImageView 
+	        android:id="@+id/picture"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_slab"
+	        android:src="@drawable/slab_2" />
+        
+	    <Button 
+	        android:id="@+id/concrete_slab_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_slab" /> 
+    
+	</LinearLayout>
+	<LinearLayout 
+	        style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture2"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_slab"
+	        android:src="@drawable/wall" />
+        
+	    <Button 
+	        android:id="@+id/concrete_wall_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_wall" />
+    </LinearLayout>
+    <LinearLayout 
+	        style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture3"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_slab"
+	        android:src="@drawable/footing" />
+        
+	    <Button 
+	        android:id="@+id/concrete_footing_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_footing" />
+    </LinearLayout>
+    <LinearLayout 
+	       style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture4"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_slab"
+	        android:src="@drawable/column" />
+        
+	    <Button 
+	        android:id="@+id/concrete_column_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_column" />
+    </LinearLayout>
+    <LinearLayout 
+        style="@style/LinearLayout_main" >
+	    
+        <ImageView 
+	        android:id="@+id/picture10"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_slab"
+	        android:src="@drawable/steps1_3" />
+        
+	    <Button 
+	        android:id="@+id/concrete_steps_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_steps" />
+    </LinearLayout>
+    <LinearLayout 
+	       style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture5"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/cmu_blocks"
+	        android:src="@drawable/cmu_block_1" />
+        
+	    <Button 
+	        android:id="@+id/cmu_block_button"
+	        style="@style/Buttons"
+	        android:text="@string/cmu_blocks" />
+    </LinearLayout>
+    <LinearLayout 
+	       style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture7"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/excavate_dirt"
+	        android:src="@drawable/excavator_1" />
+        
+	    <Button 
+	        android:id="@+id/excavate_dirt_button"
+	        style="@style/Buttons"
+	        android:text="@string/excavate_dirt" />
+    </LinearLayout> 
+    <LinearLayout 
+	        style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture8"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/backfill"
+	        android:src="@drawable/sand" />
+        
+	    <Button 
+	        android:id="@+id/backfill_button"
+	        style="@style/Buttons"
+	        android:text="@string/backfill" />
+    </LinearLayout>
+    <LinearLayout 
+	        style="@style/LinearLayout_main" >
+	    
+	        <ImageView 
+	        android:id="@+id/picture9"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	    	android:scaleType="centerCrop"
+	        android:contentDescription="@string/concrete_tear_out"
+	        android:src="@drawable/jackhammer_1" />
+        
+	    <Button 
+	        android:id="@+id/concrete_tear_out_button"
+	        style="@style/Buttons"
+	        android:text="@string/concrete_tear_out" />
+    </LinearLayout>
+    
+    
+     
+     <TextView
+         android:id="@+id/disclaimer_textView"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="6dp"
+         android:gravity="center"
+         android:textColor="#ffffff"
+         android:text="@string/disclaimer" 
+         android:background="#000000" />
+ 
+</LinearLayout>
+</ScrollView>
